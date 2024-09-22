@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku.in - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Otaku.in</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Account</a>
+                        <div class="dropdown-content">
+                            <a href="login-register.html">Login</a>
+                            <a href="login-register.html">Register</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="search-bar" onsubmit="searchProducts(event)">
+                    <input type="text" id="search" placeholder="Search products...">
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="fade-in">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </div>
+            <div id="cart-total">
+                <h3>Total: $<span id="total-price">0.00</span></h3>
+            </div>
+            <button id="checkout">Proceed to Checkout</button>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Otaku.in. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
